@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1118aa5330f3487e08832f170cca6067",
+    "content-hash": "861665c3542112167c1751f6389f9b8d",
     "packages": [
         {
             "name": "barryvdh/laravel-dompdf",
@@ -1089,22 +1089,22 @@
         },
         {
             "name": "guzzlehttp/guzzle",
-            "version": "7.13.2",
+            "version": "7.14.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/guzzle.git",
-                "reference": "bcd989ad36c92d42a3715379af91f2defee5b8dd"
+                "reference": "aef242412e13128b5049864867bb49fc37dd39de"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/bcd989ad36c92d42a3715379af91f2defee5b8dd",
-                "reference": "bcd989ad36c92d42a3715379af91f2defee5b8dd",
+                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/aef242412e13128b5049864867bb49fc37dd39de",
+                "reference": "aef242412e13128b5049864867bb49fc37dd39de",
                 "shasum": ""
             },
             "require": {
                 "ext-json": "*",
-                "guzzlehttp/promises": "^2.5",
-                "guzzlehttp/psr7": "^2.12.3",
+                "guzzlehttp/promises": "^2.5.1",
+                "guzzlehttp/psr7": "^2.12.4",
                 "php": "^7.2.5 || ^8.0",
                 "psr/http-client": "^1.0",
                 "symfony/deprecation-contracts": "^2.5 || ^3.0",
@@ -1197,7 +1197,7 @@
             ],
             "support": {
                 "issues": "https://github.com/guzzle/guzzle/issues",
-                "source": "https://github.com/guzzle/guzzle/tree/7.13.2"
+                "source": "https://github.com/guzzle/guzzle/tree/7.14.0"
             },
             "funding": [
                 {
@@ -1213,20 +1213,20 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-07-05T19:00:11+00:00"
+            "time": "2026-07-08T22:54:09+00:00"
         },
         {
             "name": "guzzlehttp/promises",
-            "version": "2.5.0",
+            "version": "2.5.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/promises.git",
-                "reference": "4360e982f87f5f258bf872d094647791db2f4c8e"
+                "reference": "9ad1e4fc607446a055b95870c7f668e93b5cff29"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/promises/zipball/4360e982f87f5f258bf872d094647791db2f4c8e",
-                "reference": "4360e982f87f5f258bf872d094647791db2f4c8e",
+                "url": "https://api.github.com/repos/guzzle/promises/zipball/9ad1e4fc607446a055b95870c7f668e93b5cff29",
+                "reference": "9ad1e4fc607446a055b95870c7f668e93b5cff29",
                 "shasum": ""
             },
             "require": {
@@ -1281,7 +1281,7 @@
             ],
             "support": {
                 "issues": "https://github.com/guzzle/promises/issues",
-                "source": "https://github.com/guzzle/promises/tree/2.5.0"
+                "source": "https://github.com/guzzle/promises/tree/2.5.1"
             },
             "funding": [
                 {
@@ -1297,7 +1297,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-06-02T12:23:43+00:00"
+            "time": "2026-07-08T15:48:39+00:00"
         },
         {
             "name": "guzzlehttp/psr7",
@@ -1420,16 +1420,16 @@
         },
         {
             "name": "guzzlehttp/uri-template",
-            "version": "v1.0.8",
+            "version": "v1.0.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/uri-template.git",
-                "reference": "9c19128923b05a5d7355e5d2318d7808b7e33bbd"
+                "reference": "d7580af6d3f8384325d9cd3e99b21c3ed1848176"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/uri-template/zipball/9c19128923b05a5d7355e5d2318d7808b7e33bbd",
-                "reference": "9c19128923b05a5d7355e5d2318d7808b7e33bbd",
+                "url": "https://api.github.com/repos/guzzle/uri-template/zipball/d7580af6d3f8384325d9cd3e99b21c3ed1848176",
+                "reference": "d7580af6d3f8384325d9cd3e99b21c3ed1848176",
                 "shasum": ""
             },
             "require": {
@@ -1486,7 +1486,7 @@
             ],
             "support": {
                 "issues": "https://github.com/guzzle/uri-template/issues",
-                "source": "https://github.com/guzzle/uri-template/tree/v1.0.8"
+                "source": "https://github.com/guzzle/uri-template/tree/v1.0.9"
             },
             "funding": [
                 {
@@ -1502,7 +1502,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-06-23T13:02:23+00:00"
+            "time": "2026-07-08T16:19:22+00:00"
         },
         {
             "name": "laravel/framework",
@@ -2422,31 +2422,31 @@
         },
         {
             "name": "maennchen/zipstream-php",
-            "version": "3.2.2",
+            "version": "3.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/maennchen/ZipStream-PHP.git",
-                "reference": "77bebeb4c6c340bb3c11c843b2cffd8bbfde4d5e"
+                "reference": "aeadcf5c412332eb426c0f9b4485f6accba2a99f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/maennchen/ZipStream-PHP/zipball/77bebeb4c6c340bb3c11c843b2cffd8bbfde4d5e",
-                "reference": "77bebeb4c6c340bb3c11c843b2cffd8bbfde4d5e",
+                "url": "https://api.github.com/repos/maennchen/ZipStream-PHP/zipball/aeadcf5c412332eb426c0f9b4485f6accba2a99f",
+                "reference": "aeadcf5c412332eb426c0f9b4485f6accba2a99f",
                 "shasum": ""
             },
             "require": {
                 "ext-mbstring": "*",
                 "ext-zlib": "*",
-                "php-64bit": "^8.3"
+                "php-64bit": "^8.2"
             },
             "require-dev": {
                 "brianium/paratest": "^7.7",
                 "ext-zip": "*",
-                "friendsofphp/php-cs-fixer": "^3.86",
+                "friendsofphp/php-cs-fixer": "^3.16",
                 "guzzlehttp/guzzle": "^7.5",
                 "mikey179/vfsstream": "^1.6",
                 "php-coveralls/php-coveralls": "^2.5",
-                "phpunit/phpunit": "^12.0",
+                "phpunit/phpunit": "^11.0",
                 "vimeo/psalm": "^6.0"
             },
             "suggest": {
@@ -2488,7 +2488,7 @@
             ],
             "support": {
                 "issues": "https://github.com/maennchen/ZipStream-PHP/issues",
-                "source": "https://github.com/maennchen/ZipStream-PHP/tree/3.2.2"
+                "source": "https://github.com/maennchen/ZipStream-PHP/tree/3.1.2"
             },
             "funding": [
                 {
@@ -2496,7 +2496,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2026-04-11T18:38:28+00:00"
+            "time": "2025-01-27T12:07:53+00:00"
         },
         {
             "name": "markbaker/complex",
@@ -4234,20 +4234,20 @@
         },
         {
             "name": "symfony/css-selector",
-            "version": "v8.1.0",
+            "version": "v7.4.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/css-selector.git",
-                "reference": "dc0e2be45c9b5588c82414f02ac574b4b986abcd"
+                "reference": "b75663ed96cf4756e28e3105476f220f92886cc4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/css-selector/zipball/dc0e2be45c9b5588c82414f02ac574b4b986abcd",
-                "reference": "dc0e2be45c9b5588c82414f02ac574b4b986abcd",
+                "url": "https://api.github.com/repos/symfony/css-selector/zipball/b75663ed96cf4756e28e3105476f220f92886cc4",
+                "reference": "b75663ed96cf4756e28e3105476f220f92886cc4",
                 "shasum": ""
             },
             "require": {
-                "php": ">=8.4.1"
+                "php": ">=8.2"
             },
             "type": "library",
             "autoload": {
@@ -4279,7 +4279,7 @@
             "description": "Converts CSS selectors to XPath expressions",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/css-selector/tree/v8.1.0"
+                "source": "https://github.com/symfony/css-selector/tree/v7.4.9"
             },
             "funding": [
                 {
@@ -4299,7 +4299,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-05-29T05:06:50+00:00"
+            "time": "2026-04-18T13:18:21+00:00"
         },
         {
             "name": "symfony/deprecation-contracts",
@@ -9378,7 +9378,9 @@
     "stability-flags": [],
     "prefer-stable": true,
     "prefer-lowest": false,
-    "platform": [],
+    "platform": {
+        "php": "^8.2"
+    },
     "platform-dev": [],
     "plugin-api-version": "2.3.0"
 }

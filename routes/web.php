@@ -36,7 +36,10 @@ Route::get('/absensi/expRekap', [AbsensiController::class, 'excelRekap'])->name(
 Route::get('/absensi/export', [AbsensiController::class, 'excel'])->name('absensi.export');
 Route::get('/absensi/pdf', [AbsensiController::class, 'pdf'])->name('absensi.pdf');
 Route::get('/absensi/rekap', [AbsensiController::class, 'rekap'])->name('absensi.rekap');
-Route::resource('absensi', AbsensiController::class);
+// Route::resource('absensi', AbsensiController::class);
+
+Route::get('/absensi/edit/{$id}', [AbsensiController::class, 'edit'])->name('absensi.edit');
+Route::get('/absensi/create', [AbsensiController::class, 'create'])->name('absensi.create');
 Route::get('/absensi', [AbsensiController::class, 'index'])->name('absensi.index');
 
 Route::post('/mapel{id}/guru', [MapelController::class, 'storeGuru'])->name('mapel.storeGuru');
@@ -52,13 +55,11 @@ Route::get('/dasbor', function () {
 Route::post('/guru/{id}/mapel', [GuruController::class, 'storeMapel'])->name('guru.storeMapel');
 Route::get('/guru/{id}/mapel', [GuruController::class, 'addMapel'])->name('guru.addMapel');
 Route::resource('guru', GuruController::class);
-Route::post('guru/tambah', [GuruController::class, 'store'])->name('guru.store');
+// Route::post('guru/tambah', [GuruController::class, 'store'])->name('guru.store');
 Route::get('/guru', [GuruController::class, 'index'])->name('guru.index');
 
-Route::get('/kelas/tambah', [KelasController::class, 'create'])->name('kelas.create');
-Route::post('/kelas/data', [KelasController::class, 'store'])->name('kelas.store');
 Route::resource('kelas', KelasController::class);
-Route::get('/kelas', [KelasController::class, 'index'])->name('kelas.index');
+
 
 
 
@@ -66,9 +67,7 @@ Route::get('/kelas', [KelasController::class, 'index'])->name('kelas.index');
 Route::post('/siswa/import', [SiswaImport::class, 'import'])->name('siswa.import');
 Route::get('/siswa/pdf', [SiswaController::class, 'exportPdf'])->name('siswa.pdf');
 Route::get('/siswa/export', [SiswaController::class, 'export'])->name('siswa.export');
-Route::post('/siswa', [SiswaController::class, 'store'])->name('siswa.store');
-Route::get('/siswa', [SiswaController::class, 'index'])->name('siswa.index');
-Route::resource('siswa', SiswaController::class);
+// Route::resource('siswa', SiswaController::class);
 
 
 
@@ -112,7 +111,7 @@ Route::post('/register', [AuthController::class, 'create'])->name('register')->m
 Route::post('/logout', [LoginController::class, 'logout'])->name('logout');
 Route::post('/login')->middleware('throttle:5,1');                                      # rate limit/batas login 5x dalam 1 menit
 Route::post('/login', [LoginController::class, 'loginProses'])->name('login.proses');
-Route::get('/login', [LoginController::class, 'index'])->name('login');
+// Route::get('/login', [LoginController::class, 'index'])->name('login');
 
 // GET biasa
 Route::get('/belajar', function () {

@@ -41,7 +41,6 @@ Route::middleware('auth:sanctum')->group(function () {
     
     // rekapAbsens
     Route::get('/rekap-absen', [RekapAbsenController::class, 'index']);
-    Route::get('/rekap-absen/AI', [RekapAbsenController::class, 'analisAI']);
         
         // ADMIN
     Route::middleware('role:admin')->group(function () {
