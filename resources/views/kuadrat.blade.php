@@ -1,0 +1,1 @@
+hasil kuadrat dari {{ $b1 }} adalah {{ $hasiL }}

@@ -1,0 +1,1 @@
+{{ $a1 }} x {{ $a2 }} adalah {{ $hasil }}
