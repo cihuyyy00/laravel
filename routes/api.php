@@ -46,7 +46,7 @@ Route::middleware('auth:sanctum')->group(function () {
     Route::middleware('role:admin')->group(function () {
         Route::apiResource('user', UserController::class);
         Route::apiResource('siswa',SiswaController::class);
-        Route::apiResource('absensi', AbsensiController::class);
+        Route::apiResource('absensi', AbsensiController::class)->names('api.absensi');
         Route::get('/user', [UserController::class, 'index']);
     });
         
