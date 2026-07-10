@@ -69,7 +69,7 @@ Route::resource('kelas', KelasController::class);
 Route::post('/siswa/import', [SiswaImport::class, 'import'])->name('siswa.import');
 Route::get('/siswa/pdf', [SiswaController::class, 'exportPdf'])->name('siswa.pdf');
 Route::get('/siswa/export', [SiswaController::class, 'export'])->name('siswa.export');
-// Route::resource('siswa', SiswaController::class);
+Route::resource('siswa', SiswaController::class);
 
 
 
@@ -113,7 +113,7 @@ Route::post('/register', [AuthController::class, 'create'])->name('register')->m
 Route::post('/logout', [LoginController::class, 'logout'])->name('logout');
 Route::post('/login')->middleware('throttle:5,1');                                      # rate limit/batas login 5x dalam 1 menit
 Route::post('/login', [LoginController::class, 'loginProses'])->name('login.proses');
-// Route::get('/login', [LoginController::class, 'index'])->name('login');
+Route::get('/login', [LoginController::class, 'index'])->name('login');
 
 // GET biasa
 Route::get('/belajar', function () {

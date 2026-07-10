@@ -52,8 +52,6 @@ Route::middleware('auth:sanctum')->group(function () {
         
     // USERRR
     Route::middleware('role:user')->group(function () {
-
-        Route::post('/logout', [AuthController::class, 'logout']);
     
     // Absensi 
         Route::get('/absensi', [AbsensiController::class, 'index']);
