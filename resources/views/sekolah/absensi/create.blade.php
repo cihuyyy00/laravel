@@ -12,7 +12,7 @@
 </div>
 @endif
 
-<form action="{{ route('absensi.store') }}" method="post">
+<form action="{{ route('absensi.web.store') }}" method="post">
     @csrf 
         
     <table border="1" cellpadding="4" cellspacing="2">

@@ -36,10 +36,12 @@ Route::get('/absensi/expRekap', [AbsensiController::class, 'excelRekap'])->name(
 Route::get('/absensi/export', [AbsensiController::class, 'excel'])->name('absensi.export');
 Route::get('/absensi/pdf', [AbsensiController::class, 'pdf'])->name('absensi.pdf');
 Route::get('/absensi/rekap', [AbsensiController::class, 'rekap'])->name('absensi.rekap');
-// Route::resource('absensi', AbsensiController::class);
 
-Route::get('/absensi/edit/{$id}', [AbsensiController::class, 'edit'])->name('absensi.edit');
+Route::post('/absensi', [AbsensiController::class, 'store'])->name('absensi.web.store');
 Route::get('/absensi/create', [AbsensiController::class, 'create'])->name('absensi.create');
+Route::get('/absensi/{id}/edit', [AbsensiController::class, 'edit'])->name('absensi.edit');
+Route::put('/absensi/{id}', [AbsensiController::class, 'update'])->name('absensi.update');
+Route::delete('/absensi/{id}', [AbsensiController::class, 'destroy'])->name('absensi.destroy');
 Route::get('/absensi', [AbsensiController::class, 'index'])->name('absensi.index');
 
 Route::post('/mapel{id}/guru', [MapelController::class, 'storeGuru'])->name('mapel.storeGuru');
