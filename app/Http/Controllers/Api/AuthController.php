@@ -56,6 +56,7 @@ class AuthController extends Controller
             ], 500);
         }
 
+        $user->tokens()->delete();
         $token  = $user->createToken('auth_token')->plainTextToken;  // bkin token baru tiap kali user login, trus ntar disimpen di db
 
         return response()->json([
